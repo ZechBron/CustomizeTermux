@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ../usr/etc
+cd /data/data/com.termux/files/usr/etc
 clear
 echo -e "\e[92m    ______           __                  _      "
 echo -e "   / ____/_  _______/ /_____  ____ ___  (_)___  ___ "
