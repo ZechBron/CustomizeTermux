@@ -15,7 +15,7 @@ else
    echo -e "\e[91mUnknow Error\e[0m"
 fi
 
-while [ -z "bash.bashrc" ]
+while [ ! -e "bash.bashrc" ]
 do
    wget https://raw.githubusercontent.com/ZechBron/CustomizeTermux/zCT/bash.bashrc
 done
