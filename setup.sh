@@ -23,7 +23,7 @@ done
 grep "figlet" log
 if [ $? = 0 ]; then
    echo "done"
-elif [ "$zCh" != "$ChB" ]; then 
+elif [ $? = 1 ]; then 
    pkg install figlet -y
 else
    echo -e "\e[91mUnknown Error\e[0m"
