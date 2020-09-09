@@ -1,0 +1,145 @@
+#!/bin/bash
+cd ../usr/etc
+clear
+echo -e "\e[92m    ______           __                  _      "
+echo -e "   / ____/_  _______/ /_____  ____ ___  (_)___  ___ "
+echo -e "  / /   / / / / ___/ __/ __ \/ __ '__ \/ /_  / / _ \ "
+echo -e " / /___/ /_/ (__  ) /_/ /_/ / / / / / / / / /_/  __/"
+echo -e " \____/\__,_/____/\__/\____/_/ /_/ /_/_/ /___/\___/"
+echo -e "  /_  __/__  _________ ___  __  ___  __  "
+echo -e "   / / / _ \/ ___/ __ '__ \/ / / / |/_/ \e[0mCoded By:\e[92m"
+echo -e "  / / /  __/ /  / / / / / / /_/ />  <    \e[0mzeCh\e[92m"
+echo -e " /_/  \___/_/  /_/ /_/ /_/\__,_/_/|_|  \e[0m v 0.1"
+
+color() {
+echo -e "\e[94m[\e[0m\e[32mZ\e[0m\e[94m]\e[0m \e[32mDo you want to add color?\e[0m"
+echo " 0. I don't want to add color"
+echo -e " 1. \e[31mRed\e[0m"
+echo -e " 2. \e[32mGreen\e[0m"
+echo -e " 3. \e[33mYellow\e[0m"
+echo -e " 4. \e[34mBlue\e[0m"
+echo -e " 5. \e[35mMagenta\e[0m"
+echo -e " 6. \e[36mCyan\e[0m"
+echo -e " 7. \e[37mLight gray\e[0m"
+echo -e " 8. \e[90mDark gray\e[0m"
+echo -e " 9. \e[91mLight red\e[0m"
+echo -e " 10. \e[92mLight green\e[0m"
+echo -e " 11. \e[93mLight yellow\e[0m"
+echo -e " 12. \e[94mLight blue\e[0m"
+echo -e " 13. \e[95mLight magenta\e[0m"
+echo -e " 14. \e[96mLight cyan\e[0m"
+echo -e " 15. \e[97mWhite\e[0m"
+read colour
+}
+zech=1
+echo -e "\e[94m[\e[0m\e[32mZ\e[0m\e[94m]\e[0m \e[32mPlease Choose:\e[0m"
+echo -e "\e[96m 1. Change Bash Prompt"
+echo -e " 2. Change Termux Welcome Banner\e[0m"
+read zCh
+
+# For Bash Prompt
+if [ $zCh = 1 ]; then
+   txt=$(echo -e "\e[94m[\e[0m\e[32mZ\e[0m\e[94m]\e[0m \e[32mEnter New Bash Prompt: \e[0m\e[34m")
+   read -p "$txt" -e -i "(example: root@zech:~#)" ChB
+
+   color
+   if [ $colour = 1 ]; then
+      echo "PS1='\e[31m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 2 ]; then
+      echo "PS1='\e[32m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 3 ]; then
+      echo "PS1='\e[33m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 4 ]; then
+      echo "PS1='\e[34m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 5 ]; then
+      echo "PS1='\e[35m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 6 ]; then
+      echo "PS1='\e[36m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 7 ]; then
+      echo "PS1='\e[37m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 8 ]; then
+      echo "PS1='\e[90m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 9 ]; then
+      echo "PS1='\e[91m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 10 ]; then
+      echo "PS1='\e[92m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 11 ]; then
+      echo "PS1='\e[93m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 12 ]; then
+      echo "PS1='\e[94m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 13 ]; then
+      echo "PS1='\e[95m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 14 ]; then
+      echo "PS1='\e[96m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 15 ]; then
+      echo "PS1='\e[97m$ChB\e[0m '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ $colour = 0 ]; then
+      echo "PS1='$ChB '" >> bash.bashrc
+      echo -e "\e[96mChanging bash prompt done. Please restart your termux and open it again to see the result.\e[0m"
+   else
+      echo -e "\e[95mWrong Input. Try again.\e[0m"
+   fi
+
+# For Termux Welcome Banner
+elif [ $zCh = 2 ]; then
+   echo -e "\e[94m[\e[0m\e[32mZ\e[0m\e[94m]\e[0m \e[32mChoose Welcome Style Banner:\e[0m"
+   echo -e "\e[96m banner"
+   echo -e " big"
+   echo -e " block"
+   echo -e " bubble"
+   echo -e " digital"
+   echo -e " ivrit"
+   echo -e " lean"
+   echo -e " mini"
+   echo -e " script"
+   echo -e " shadow"
+   echo -e " slant"
+   echo -e " small"
+   echo -e " smscript"
+   echo -e " smshadow"
+   echo -e " smslant"
+   echo -e " standard\e[0m"
+
+   txtOne=$(echo -e "\e[94m[\e[0m\e[32mZ\e[0m\e[94m]\e[0m \e[32mEnter keyword in small letter: \e[0m\e[34m")
+   read -p "$txtOne" -e -i "shadow" key
+
+   txtTwo=$(echo -e "\e[94m[\e[0m\e[32mZ\e[0m\e[94m]\e[0m \e[32mEnter Welcome Word: \e[0m\e[34m")
+   read -p "$txtTwo" -e -i "(example: Zech The Geek)" word
+   figlet -f $key $word >> motd
+
+   echo -e "\e[94m[\e[0m\e[32mZ\e[0m\e[94m]\e[0m \e[32mDo you want to add something else?\e[0m (y/n): "
+   read opt
+
+   if [ "$opt" = "y" ]; then
+      echo -e "\e[94m[\e[0m\e[32mZ\e[0m\e[94m]\e[0m \e[32mAdd something else:\e[0m\e[34m"
+      while [ "$zech" != 0 ]
+      do
+         read add
+         echo "$add" >> motd
+      done
+      echo -e "\96mChanging termux welcome page is done. Please restart your termux and open it again to see the result.\e[0m"
+   elif [ "$opt" = "n" ]; then
+      echo -e "\e[96mChanging termux welcom page is done. Please restart your termux and open it again to see the result\e[0m"
+   else
+      echo -e "\e[95mWrong input. Try again.\e[0m"
+   fi
+else
+   echo -e "\e[95mWrong input. Try again.\e[0m"
+fi
+
+
