@@ -1,0 +1,18 @@
+#!/bin/bash
+
+figlet -f banner banner
+figlet -f big big
+figlet -f block block
+figlet -f bubble bubble
+figlet -f digital digital
+figlet -f ivrit ivrit
+figlet -f lean lean
+figlet -f mini mini
+figlet -f script script
+figlet -f shadow shadow
+figlet -f slant slant
+figlet -f small small
+figlet -f smscript smscript
+figlet -f smshadow smshadow
+figlet -f smslant smslant
+figlet -f standard standard 
