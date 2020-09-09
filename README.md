@@ -1,6 +1,7 @@
 # Customize Termux
 
 You can customize your termux using this very simple script
+![Coded By Zech Bron](https://github.com/ZechBron/CustomizeTermux/blob/zCT/IMG_20200909_151231.png)
 
 ## Installation:
 
