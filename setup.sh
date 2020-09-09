@@ -3,7 +3,6 @@ chmod +x ViewBanner
 chmod +x TermuxStyle
 cd /data/data/com.termux/files/usr/etc
 rm -f bash.bashrc motd
-pkg install grep -y
 
 pkg list-installed > log
 
