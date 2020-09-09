@@ -1,5 +1,7 @@
 #!/bin/bash
-cd ../usr/etc
+chmod +x ViewBanner
+chmod +x TermuxStyle
+cd /data/data/com.termux/files/usr/etc
 rm -f bash.bashrc motd
 pkg install grep -y
 
@@ -30,6 +32,4 @@ fi
 
 rm -f log
 
-cd $HOME/Customize-Termux
-chmod +x ViewBanner
-chmod +x TermuxStyle
+cd $HOME/CustomizeTermux
