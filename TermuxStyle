@@ -142,7 +142,7 @@ elif [ $zCh = 2 ]; then
    else
       echo -e "\e[95mWrong input. Try again.\e[0m"
    fi
-$else
+#else
 #   echo -e "\e[95mWrong input. Try again.\e[0m"
 fi
 done
