@@ -1,4 +1,4 @@
-# Customize Termux [![ZechBron](https://img.shields.io/badge/author-Zech-red.svg)](https://github.com/ZechBron)
+# Customize Termux [![ZechBron](https://img.shields.io/badge/author-Zech-green.svg)](https://github.com/ZechBron)
 
 
 You can customize your termux using this very simple script
